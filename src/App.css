@@ -26,8 +26,48 @@ body{
 .productPreview{
 
   width: 50%;
+  position: relative;
   
 }
+
+.TimeSection{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  color: white;
+  font-size: 40px;
+}
+
+.HeartBeatSection{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  color: white;
+  font-size: 40px;
+}
+
+.HeartBeatSection  {
+  animation: beat is infinite;
+}
+
+@keyframes beat {
+  0%{
+    transform: scale(1 , 1);
+  }
+
+  50%{
+    transform: scale (1.2 , 1.2);
+  }
+  100%{
+    transform: scale(1 , 1);
+  }
+  
+}
+
 
 .productPreview > img {
 
@@ -58,17 +98,86 @@ body{
 
 }
 
+.sectionHeading{
+  font-size: 20px;
+  margin-bottom: 8px;
+
+}
+
 .productImage{
 
   width: 100%;
   max-width: 80px;
-  
-  border: 2px solid teal;
   border-radius: 8px;
   margin-right: 12px;
   cursor: pointer;
 }
 
-.selectedProductImage{
+.productImage1{
+
+  width: 100%;
+  max-width: 80px;
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
   border: 2px solid teal;
 }
+
+.Features{
+
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.TimeBtn{
+ 
+  background-color: gainsboro;
+  margin-right: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0;
+  box-sizing: 12px;
+  min-width: 100px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  /* color: white;
+  background-color: gray; */
+  
+}
+
+.selectedTime{
+
+  color: white;
+  background-color: gray;
+}
+
+.RateBtn{
+
+  margin-right: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0;
+  min-width: 100px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.BuyBtn{
+
+  font-size: 14px;
+  background-color: teal;
+  color: white;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 0;
+  min-width: 100px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+

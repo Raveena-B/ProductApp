@@ -1,3 +1,7 @@
+body{
+  font-family: 'Source Sons pro', sans-serif;
+} 
+
 .Topbar{
   background-color: #252c3bfa;
   text-align: center;
@@ -31,9 +35,40 @@
  
 }
 
+.productTitle{
+   
+   font-size: 48px;
+   font-weight: 600%;
+   margin-top: 0%;
+   margin-bottom: 16px;
+
+}
+
+.productDescription{
+   font-size: 20px;
+   color:black ;
+   margin-top: 0%;
+   margin-bottom: 16px;
+}
+
 .productData{
 
   width: 70%;
  
 
+}
+
+.productImage{
+
+  width: 100%;
+  max-width: 80px;
+  
+  border: 2px solid teal;
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.selectedProductImage{
+  border: 2px solid teal;
 }

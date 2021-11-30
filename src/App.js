@@ -1,7 +1,7 @@
-
 import  './App.css';
 import './ProductData';
 import ProductData from './ProductData';
+import ProductPreview from './ProductPreview';
 
 
 
@@ -18,16 +18,8 @@ function App() {
       </header>
       <div className ="Maincontainer">
         <div className="productPreview">
-          <img src = 'https://imgur.com/iOeUBV7.png'/>
           
-          {/* <div className="TimeSection">
-            <p>{`${currentHour}:${currentMinute}`}</p>
-          </div> */}
-
-          <div className="HeartBeatSection">
-              ❤️
-            <p>78</p>
-          </div>
+          <ProductPreview/>
 
         </div>
         <div className="productData">
